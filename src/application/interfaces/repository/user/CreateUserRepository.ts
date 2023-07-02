@@ -6,5 +6,5 @@ export interface CreateUserRepository{
 
 export namespace CreateUserRepository{
     export type Request = Omit<UserProps, "id" | "createdAt" | "updatedAt">
-    export type Response = string
+    export type Response = UserProps
 }

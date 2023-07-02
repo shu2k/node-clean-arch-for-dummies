@@ -21,9 +21,6 @@
     },
     "rootDirs": [
       "src",
-      "test"
     ],
-    "include": ["src", "test"],
-    "exclude": []
   }
 }

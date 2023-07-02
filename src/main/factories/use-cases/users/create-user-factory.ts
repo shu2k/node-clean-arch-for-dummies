@@ -4,5 +4,5 @@ import {UserRepository} from "@infrastructure/db/postgres/repository/UserReposit
 
 export const makeCreatePost = (): CreateUserInterface => {
     const userRepository = new UserRepository();
-    return new CreateUser(UserRepository)
+    return new CreateUser(userRepository)
 }

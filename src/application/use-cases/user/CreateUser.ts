@@ -6,6 +6,6 @@ export class CreateUser implements CreateUserInterface{
     }
 
     async execute(postData: CreateUserInterface.Request) : Promise <CreateUserInterface.Response>{
-        return this.createUserRepository.createUser(postData)
+        return await this.createUserRepository.createUser(postData)
     }
 }

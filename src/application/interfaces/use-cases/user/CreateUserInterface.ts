@@ -7,5 +7,5 @@ export interface CreateUserInterface extends UseCase<CreateUserInterface.Request
 
 export namespace CreateUserInterface {
     export type Request = Omit<UserProps, 'id'>;
-    export type Response = string;
+    export type Response = UserProps;
 }

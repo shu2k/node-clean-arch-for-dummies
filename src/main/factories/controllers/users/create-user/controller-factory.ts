@@ -4,7 +4,7 @@ import {makeCreateUserValidation} from "@main/factories/controllers/users/create
 import {makeCreatePost} from "@main/factories/use-cases/users/create-user-factory";
 
 export const makeCreateUserController = (): BaseController => {
-    const validation = new makeCreateUserValidation()
+    const validation = makeCreateUserValidation()
     const useCase = makeCreatePost()
     return new CreateUserController(validation, useCase)
 }

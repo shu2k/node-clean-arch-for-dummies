@@ -7,5 +7,5 @@ export interface UpdateUserInterface extends UseCase<UpdateUserInterface.Request
 
 export namespace UpdateUserInterface {
     export type Request = Omit<UserProps, "id" | "createdAt">
-    export type Response = string
+    export type Response = UserProps
 }
